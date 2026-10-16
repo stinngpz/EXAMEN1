@@ -4,66 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEGOCIO DE CARPINTERIA</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="Encabezado-Pagina">
-        <div class="logo-area">
-            <h1>fabrica muebles</h1>
-            <p class="eslogan">Conoce nuestros muebles</p>
+    <div class="informacion text-sm flex justify-center bg-[#a77f5f] text-white rounded-xs gap-10">
+        <p>contacto: 33992772 | 987626223 </p>
+        <p>hora de atencion: Lun-Vie 8am- 5pm</p>
+    </div>
+
+     <nav class="bg-gray-900 text-white">
+        <div class="max-auto mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+            <a href="incio.html" class="flex items-center gap-3 text-3xl font-bold"><img src="img/image.png" alt="Logo Aura Madera" class="h-12 w-auto">Aura Madera</a>
+           <input type="checkbox" id="btn-menu" class="peer hidden">
+            <label for="btn-menu" class="md:hidden text-3xl cursor-pointer">☰</label>
+            <ul class="hidden peer-checked:flex flex-col w-full mt-4 md:mt-0 md:flex md:flex-row md:gap-6 md:w-auto">
+            <li><a href="incio.html" class="block py-2 hover:text-amber-400">Inicio</a></li>
+            <li><a href="catalogos.html" class="block py-2 hover:text-amber-400 ">Catalogos</a></li>
+            <li><a href="lotes especiales.html" class="block py-2 hover:text-amber-400">Lotes Especiales</a></li>
+            <li><a href="licitaciones.html" class="block py-2 hover:text-amber-400">Licitaciones</a></li>
+            <li><a href="contacto.html" class="block py-2 hover:text-amber-400">Contacto</a></li>
+            <li><a href="https://wa.me/" target="_blank" class="block w-fit bg-[#25D366] hover:bg-green-600 text-white font-bold px-5 py-2 mt-2 md:mt-0 rounded-full shadow transition">Cotizar Lote por WhatsApp</a></li>
+            </ul>
+
         </div>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="incio.html">Inicio</a></li>
-            <li><a href="catalogos.html">Catalogos</a></li>
-            <li><a href="lotes especiales.html"> Lotes Especiales</a></li>
-            <li><a href="licitaciones.html"> Licitaciones</a> </li>
-            <li><a href="contacto.html"> Contacto</a> </li>
-        </ul>
     </nav>
 
     <main>
-        section>
-            <h2>L0tes y Descuentos espciales</h2>
-            <div class="contenedor lotes">
-                <article>
-                <h3 class="badge">Oferta</h3>
-                <p> mesa de cedro</p>
-                <p><strong>L. 799.99</strong> <del>L. 1,150.00</del></p>
+        <section class="max-w-7xl mx-auto px-4 my-6">
+            <h2 class="text-3xl text-center bg-gray-100 rounded-lg p-3 mb-6">Descuentos Especiales</h2>
+            <div class="contenedor-decuentos grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="flex flex-col bg-white border rounded-xl shadow p-4">
                 <figure>
-                    <img src="img/oferta1.webp" alt="Oferta 1" width="300" height="200">
+                    <img src="img/producto2.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                <button type="button">Añadir a la canasta</button>
-                </article>
-                <article>
-                <h3 class="badge">Oferta</h3>
-                <p> mesa de cedro</p>
-                <p><strong>L. 799.99</strong> <del>L. 1,150.00</del></p>
+                <h3 class="nombre text-xl font-bold mt-2"> Silla Operativa Ergonómica Mesh</h3>
+                <h4 class="categoria text-gray-500"> Descuento por compra grande</h4>
+                <p class="precio-regular text-gray-500 mt-2"><del>L. 3,200.00 c/u</del></p>
+                <p class="precio-especial text-3xl text-red-600"><strong>L. 2,500.00 c/u</strong></p>
+                <p class="mt-2"><strong>Descripción</strong><br>Precio preferencial por unidad al solicitar cotización corporativa superior a 15 sillas</p>
+            </article>
+            <article class="flex flex-col bg-white border rounded-xl shadow p-4">
                 <figure>
-                    <img src="img/oferta1.webp" alt="Oferta 1" width="300" height="200">
+                
+                    <img src="img/producto1.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                <button type="button">Añadir a la canasta</button>
-                </article>
-                <article>
-                <h3 class="badge">Oferta</h3>
-                <p> mesa de cedro</p>
-                <p><strong>L. 799.99</strong> <del>L. 1,150.00</del></p>
+                <h3 class="nombre text-xl font-bold mt-2">Escritorio Ejecutivo en Caoba</h3>
+                <h4 class="categoria text-gray-500"> categoria</h4>
+                <p class="precio-regular text-gray-500 mt-2"><del>L. 8,500.00</del></p>
+                <p class="precio-especial text-3xl text-red-600"><strong>L. 6,800.00</strong></p>
+                    <p class="mt-2"><strong>Descripción</strong><br>Descuento directo por renovación de catálogo de la línea clásica en madera de caoba</p>
+            </article>
+
+            <article class="flex flex-col bg-white border rounded-xl shadow p-4">
                 <figure>
-                    <img src="img/oferta1.webp" alt="Oferta 1" width="300" height="200">
+                    <img src="img/producto13.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                <button type="button">Añadir a la canasta</button>
-                </article>
+                <h3 class="nombre text-xl font-bold mt-2"> Juego de Comedor Exterior</h3>
+                <h4 class="categoria text-gray-500"> Descuento Promocional</h4>
+               
+                 <p class="precio-regular text-gray-500 mt-2"><del>L. 11,800</del></p>
+                <p class="precio-especial text-3xl text-red-600"><strong>L. 9,900</strong></p>
+                <p class="mt-2"><strong>Descripción</strong><br>Promoción especial para terrazas y restaurantes en hoteles de la zona turística (Roatán/SPS)</p>
+            </article>
+
             </div>
         </section>
-
+        <section class="max-w-7xl mx-auto px-4 my-6">
+            <h2 class="text-3xl text-center bg-gray-100 rounded-lg p-3 mb-6">Lotes Especiales</h2>
+            <div class="contenedor lotes grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="flex flex-col bg-white border rounded-xl shadow p-4">
+                <figure>
+                    <img src="img/lote1.jpeg" alt="producto1" class="w-full h-48 object-contain">
+                    </figure>
+                    <h3 class="nombre text-xl font-bold mt-2"> Equipamiento Completo para Hotel (10 Habitaciones)</h3>
+                <h4 class="categoria text-gray-500"> categoria</h4>
+                <p class="precio-regular text-gray-500 mt-2"><del>L. 303,000.00</del></p>
+                <p class="precio-especial text-3xl text-red-600"><strong>L. 255,000.00</strong></p>
+                <p class="mt-2"><strong>Descripción</strong><br>10 Camas King Size + 10 Clósets Modulares + 20 Mesas de Noche Minimalistas</p>
+            </article>
+            <article class="flex flex-col bg-white border rounded-xl shadow p-4">
+                <figure>
+                <img src="img/lote2.jpeg" alt="producto1" class="w-full h-48 object-contain">
+                </figure>
+                <h3 class="nombre text-xl font-bold mt-2"> Paquete Corporativo Sala de Juntas & Dirección</h3>
+                    <h4 class="categoria text-gray-500"> Lote Especial</h4>
+                        <p class="precio-regular text-gray-500 mt-2"><del>L. 82,000</del></p>
+                    <p class="precio-especial text-3xl text-red-600"><strong>L. 69,500</strong></p>
+                <p class="mt-2"><strong>Descripción</strong><br>1 Mesa de Juntas 10P + 10 Sillas Mesh + 1 Escritorio Ejecutivo Caoba + 1 Credenza</p>
+            </article>
+            <article class="flex flex-col bg-white border rounded-xl shadow p-4">
+                <figure>
+                    <img src="img/lote3.jpeg" alt="producto1" class="w-full h-48 object-contain">
+                </figure>
+                <h3 class="nombre text-xl font-bold mt-2"> Lote Educativo Universidades (20 Aulas)</h3>
+                    <h4 class="categoria text-gray-500"> Lote Especial</h4>
+                <p class="precio-regular text-gray-500 mt-2"><del>L. 725,000.00</del></p>
+                <p class="precio-especial text-3xl text-red-600"><strong>L. 599,000.00</strong></p>
+                <p class="mt-2"><strong>Descripción</strong><br>500 Pupitres Universitarios + 20 Escritorios Catedrático + 20 Archiveros de Seguridad</p>
+            </article>
+            </div>
+        </section>
     </main>
-      <footer class="pie-pagina">
+    <section>
+        <h2 class="titulo text-3xl text-center m-2 gap-20">Enlace a redes sociales</h2>
+        <nav>
+        <ul class="flex justify-center gap-20">
+            <li><a href="https://www.facebook.com/" target="_blank" ><img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="40" height="40"></a></li>
+            </ul>
+        </nav>
+    </section>
+        <footer class="titulo text-sm text-center m-2">
         <br>
         <br>
         <p>&copy; 2026 FANAS Honduras. Todos los derechos reservados.<br>
-            Tegucigalpa MDC, anillo periferico cerca de puente san miguel, tel: 3399-2772 | 9876-2622 </br>
-            Sala de ventas: Blvd. Moazan, Tegucigalpa Tel: 2238-7756</br>
+            Tegucigalpa MDC, anillo periferico cerca de puente san miguel, tel: 3399-2772 | 9876-2622 -- Sala de ventas: Blvd. Morazan, Tegucigalpa Tel: 2238-7756</br>
+            
         Sitio hecho con fines académicos. [Justin David Gonzalez 20231031599]</p>
     </footer>
 

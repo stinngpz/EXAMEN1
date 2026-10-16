@@ -4,53 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEGOCIO DE CARPINTERIA</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="Encabezado-Pagina">
-        <div class="logo-area">
-            <h1>fabrica muebles</h1>
-            <p class="eslogan">Conoce nuestros muebles</p>
-        </div>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="incio.html">Inicio</a></li>
-            <li><a href="catalogos.html">Catalogos</a></li>
-            <li><a href="lotes especiales.html"> Lotes Especiales</a></li>
-            <li><a href="licitaciones.html"> Licitaciones</a> </li>
-            <li><a href="contacto.html"> Contacto</a> </li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="inicio">
-        <h1>FANASA HONDURAS</h1>
+<body >
+    <div class="informacion text-sm flex justify-center bg-[#a77f5f] text-white rounded-xs gap-10">
         <p>contacto: 33992772 | 987626223 </p>
         <p>hora de atencion: Lun-Vie 8am- 5pm</p>
-        <button type="button">Cotizar lote por WhatsApp</button>
-        </section>
+    </div>
 
-        <section>
-           <h2 class="enlaces">Enlace a redes sociales</h2>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                                <img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                                <img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="40" height="40">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            
-        </section>
+    <nav class="bg-gray-900 text-white">
+        <div class="max-auto mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+            <a href="incio.html" class="flex items-center gap-3 text-3xl font-bold"><img src="img/image.png" alt="Logo Aura Madera" class="h-12 w-auto">Aura Madera</a>
+           <input type="checkbox" id="btn-menu" class="peer hidden">
+            <label for="btn-menu" class="md:hidden text-3xl cursor-pointer">☰</label>
+            <ul class="hidden peer-checked:flex flex-col w-full mt-4 md:mt-0 md:flex md:flex-row md:gap-6 md:w-auto">
+            <li><a href="incio.html" class="block py-2 hover:text-amber-400">Inicio</a></li>
+            <li><a href="catalogos.html" class="block py-2 hover:text-amber-400 ">Catalogos</a></li>
+            <li><a href="lotes especiales.html" class="block py-2 hover:text-amber-400">Lotes Especiales</a></li>
+            <li><a href="licitaciones.html" class="block py-2 hover:text-amber-400">Licitaciones</a></li>
+            <li><a href="contacto.html" class="block py-2 hover:text-amber-400">Contacto</a></li>
+            <li><a href="https://wa.me/" target="_blank" class="block w-fit bg-[#25D366] hover:bg-green-600 text-white font-bold px-5 py-2 mt-2 md:mt-0 rounded-full shadow transition">Cotizar Lote por WhatsApp</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+   <main class="min-h-screen flex items-center justify-center">
+    <img src="img/logo-grande.png" alt="Logo Aura Madera" class="w-full h-auto max-w-6xl">
     </main>
-      <footer class="pie-pagina">
+    <section>
+        <h2 class="titulo text-3xl text-center m-2 gap-20">Enlace a redes sociales</h2>
+        <nav>
+        <ul class="flex justify-center gap-20">
+            <li><a href="https://www.facebook.com/" target="_blank" ><img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="40" height="40"></a></li>
+            </ul>
+        </nav>
+    </section>
+
+    </main>
+      <footer class="titulo text-sm text-center m-2">
         <br>
         <br>
         <p>&copy; 2026 FANAS Honduras. Todos los derechos reservados.<br>

@@ -4,156 +4,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEGOCIO DE CARPINTERIA</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="Encabezado-Pagina">
-        <div class="logo-area">
-            <h1>fabrica muebles</h1>
-            <p class="eslogan">Conoce nuestros muebles</p>
-        </div>
+    <div class="informacion text-sm flex justify-center bg-[#a77f5f] text-white rounded-xs gap-10">
+        <p>contacto: 33992772 | 987626223 </p>
+        <p>hora de atencion: Lun-Vie 8am- 5pm</p>
+    </div>
     </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="incio.html">Inicio</a></li>
-            <li><a href="catalogos.html">Catalogos</a></li>
-            <li><a href="lotes especiales.html"> Lotes Especiales</a></li>
-            <li><a href="licitaciones.html"> Licitaciones</a> </li>
-            <li><a href="contacto.html"> Contacto</a> </li>
-        </ul>
+     <nav class="bg-gray-900 text-white">
+        <div class="max-auto mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+            <a href="incio.html" class="flex items-center gap-3 text-3xl font-bold"><img src="img/image.png" alt="Logo Aura Madera" class="h-12 w-auto">Aura Madera</a>
+           <input type="checkbox" id="btn-menu" class="peer hidden">
+            <label for="btn-menu" class="md:hidden text-3xl cursor-pointer">☰</label>
+            <ul class="hidden peer-checked:flex flex-col w-full mt-4 md:mt-0 md:flex md:flex-row md:gap-6 md:w-auto">
+            <li><a href="incio.html" class="block py-2 hover:text-amber-400">Inicio</a></li>
+            <li><a href="catalogos.html" class="block py-2 hover:text-amber-400 ">Catalogos</a></li>
+            <li><a href="lotes especiales.html" class="block py-2 hover:text-amber-400">Lotes Especiales</a></li>
+            <li><a href="licitaciones.html" class="block py-2 hover:text-amber-400">Licitaciones</a></li>
+            <li><a href="contacto.html" class="block py-2 hover:text-amber-400">Contacto</a></li>
+            <li><a href="https://wa.me/" target="_blank" class="block w-fit bg-[#25D366] hover:bg-green-600 text-white font-bold px-5 py-2 mt-2 md:mt-0 rounded-full shadow transition">Cotizar Lote por WhatsApp</a></li>
+            </ul>
+
+        </div>
     </nav>
     <main>
         <section>
-            <h2 clas="titulo">CATALOGO DE PRODUCTOS</h2>
+            <div class="contenedor titulo rounded-lg bg-gray-100 p-2 m-2">
+            <h2 class="titulo text-3xl text-center m-2">CATALOGO DE PRODUCTOS</h2>
+            </div>
+            <section class="max-auto mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
+                    <figure>
+                        <img src="img/producto1.jpeg" alt="producto1" class="w-full h-48 object-contain">
+                    </figure>
+                    <h3 class="nombre text-xl font-bold">Escritorio ejecutivo en Caoba</h3>
+                    <h4 class="categoria text-gray-500">linea ejecutiva</h4>
+                    <h6 class="descripcion text-black font-bold">Descripcion</h6>
+                    <p>Escritorio de madera de caoba con acabado industrial y cajonera integrada.</p>
+                    <p class="mt-auto"><strong>L. 1999.99</strong></p>
+                </article>
 
-            <div class="contedor productos">
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto2.jpeg" alt="producto2" class="w-full h-48 object-contain">
                 </figure>
-                
-            </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+                <h3 class="nombre text-xl font-bold"> Silla Operativa Ergonomica</h3>
+                <h4 class="categoria text-gray-500"> Linea Ejecutiva</h4>
+                <h6 class="descripcion text-black font-bold">Descripcion</h6>
+                <P>Silla de oficina con soporte lumbar ajustable y malla transpirable.</P>
+                <p class="mt-auto"><strong>L. 3,500.00</strong></p>
+                </article>
+
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto3.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
-            </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+                <h3 class="nombre text-xl font-bold"> Mesa de Directorio en Cedro</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <h6 class="descripcion text-black font-bold">Descripcion</h6>
+                <P>Mesa señorial en madera de cedro para salas de conferencias y reuniones ejecutivas.</P>
+                <p class="mt-auto"><strong>L. 4000</strong></p>
+                </article>
+
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto4.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
-            </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+                <h3 class="nombre text-xl font-bold"> Estanteria de Pino Oocarpa</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <p> ibrero abierto de 5 niveles resistente fabricado con madera de pino tratada.</p>
+                <p class="mt-auto"><strong>L. 3799.99</strong></p>
+                </article>
+
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto5.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
-            </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+                <h3 class="nombre text-xl font-bold"> Pupitre Universitario</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <p>Estudiantil</p>
+                <p class="mt-auto"><strong>L. 1299.99</strong></p>
+                </article>
+
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto6.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
+                <h3 class="nombre text-xl font-bold"> Archivero Metálico 4 Gavetas</h3>
+                <h4 class="categoria"> categoria </h4>
+                <p>Oficina</p>
+                <p class="mt-auto"><strong>L. 4,800.00</strong></p>
             </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto7.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
+                <h3 class="nombre text-xl font-bold"> Clóset Modular para Hotel</h3>
+                <h4 class="categoria"> Linea HOTELEA</h4>
+                <p>lindo closet para hotel de maneda refinada</p>
+                <p class="mt-auto"><strong>L. 16,500.00</strong></p>
             </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto8.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
+                <h3 class="nombre text-xl font-bold"> Mesa de Noche Minimalista</h3>
+                <h4 class="categoria"> Linea hoteleria</h4>
+                <p>Mesa compacta con cajón deslizable u para habitaciones de hotel.</p>
+                <p class="mt-auto"><strong>L. 1,800.00</strong></p>
             </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto9.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
+                <h3 class="nombre text-xl font-bold">Mesa de Centro para Lobby</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <p>Mesa rectangular de diseño moderno</p>
+                <p class="mt-auto"><strong>L. 4,100</strong></p>
             </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto10.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
+                <h3 class="nombre text-xl font-bold"> Recepción Modular Frontal</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <p>Mostrador cuadrado con detalles en madera y superficie de alta resistencia</p>
+                <p class="mt-auto"><strong>L. 18,500.00</strong></p>
             </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto11.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
+                <h3 class="nombre text-xl font-bold"> Sillón Ejecutivo de Piel Sintética</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <h6 class="descripcion text-black font-bold">Descripcion</h6>
+                <P>sillon de alta calidad lujoso para oficinas</P>
+                <p class="mt-auto"><strong>L. 5,600.00</strong></p>
             </article>
-            <article>
-                
-                <h3 class="nombre"> Escritorio ejecutivo</h3>
-                <h4 class="categoria"> categoria</h4>
-                <p>linea ejecutiva</p>
-                <p><strong>L. 799.99</strong></del></p>
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
                 <figure>
-                    <img src="img/producto1.png" alt="producto1" width="300" height="200">
+                    <img src="img/producto12.jpeg" alt="producto1" class="w-full h-48 object-contain">
                 </figure>
-                
+                <h3 class="nombre text-xl font-bold">Credenza Corporativa con Puertas</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <h6 class="descripcion text-black font-bold">Descripcion</h6>
+                <P>mueble auxiliar bajo con puertas abatibles para almacenamiento corporativo</P>
+                <p class="mt-auto"><strong>L. 6,700.00</strong></p>
             </article>
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
+                <figure>
+                    <img src="img/producto13.jpeg" alt="producto1" class="w-full h-48 object-contain">
+                </figure>
+                <h3 class="nombre text-xl font-bold">Juego de Comedor Exterior para Terraza</h3>
+                <h4 class="categoria"> Linea hotekeria</h4>
+                <p> Mesa y 4 sillas ideal para Restaurante y Exterior</p>
+                <p class="mt-auto"><strong>L. 11,800.00</strong></p>
+            </article>
+            
+            <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
+                <figure>
+                    <img src="img/producto14.jpeg" alt="producto1" class="w-full h-48 object-contain">
+                </figure>
+                <h3 class="nombre text-xl font-bold">Estante Organizador para Almacén / Depósito</h3>
+                <h4 class="categoria"> Linea Ejecutiva</h4>
+                <p>Estantería pesada de madera tratada para carga y depósitos corporativos./p>
+                <p class="mt-auto"><strong>L. 6,200.00</strong></p>
+            </article>
+        </section>
+        
+    </section>
+        <section class="calculadora m-auto">
+            <div class="contenedor titulo rounded-lg bg-gray-100 p-2 m-2">
+            <h2 class="titulo text-3xl text-center m-2"class="titulo text-3xl text-center m-2">Calculadora visual de Pedidos</h2>
+            <h3 class="subtitulo text-xl text-center m-2"> calculadora para hacer simulaciones de pedidos</h3>
             </div>
 
-        </section>
-    </main>
+            <div class="contenedor-calc m-auto max-w-3xl p-2 my-2">
+                <form class="border rounded-xl p-4 space-y-3 shadow bg-white">
+                <div class="campo flex justify-between items-center border rounded-lg p-2">
+                    <label for="cantidad" class="font-semibold"> Cantidad de Piezas a cotizar</label>
+                    <input id="cantidad" type="number" min="1" class="border rounded px-2 py-1 w-32 focus:ring-2 focus:ring-amber-400">
+                    </div>
+                    <div class="campo flex justify-between items-center border rounded-lg p-2">
+                    <label for="mueble" class="font-semibold">Tipo de Mueble</label>
+                    <select id="mueble" class="border rounded px-2 py-1">
+                        <option>Mesa de Directorio en cedro L.2,400 </option>
+                        <option>Estanteria de pino ocaroa l.2,700</option>
+                        <option>Pupitre universitario L. 1,700</option>
+                        <option>silla ergonomica operativa L. 3,400</option>
+                    </select>
+                    </div>
+                    <div class="campo flex justify-between items-center border rounded-lg p-2">
+                    <label for="flete" class="font-semibold">Elegir destino y costo de viaje</label>
+                    <select id="flete" class="border rounded px-2 py-1">
+                        <option>SIguatepeque/ comayagua - Costo L.700.00 </option>
+                        <option>San predo Sula - Costo L.2,000</option>
+                        <option>Tegucigalpo - Costo L.300</option>
+                        <option> Roatan/Islas de la bahia -  costo L. 4,000</option>
+                        </select>
 
- <footer class="pie-pagina">
+                    </div>
+                    <div class="politica text-sm text-gray-500 italic">
+                        <span>*Descuento a institucional del 12% a partir de 10 piezas</span>
+                    </div>
+                    <button type="button" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 rounded-lg cursor-pointer">Cclular Presupuesto</button>
+                </form>
+            </div>
+            <div class="resultado max-w-3xl m-auto border rounded-xl p-4 bg-gray-100 text-center">
+                <p class="resultado text-2xl font-bold">Resultado</p>
+                <p class="salida text-lg">El costo estimado del pedido es: </p>
+
+            </div>
+        </section>
+        <section class="tabla-compartivA ">
+            <div class="contenedor titulo rounded-lg bg-gray-100 p-2 m-2">
+            <h2 class="titulo text-3xl text-center m-2">Tabla comparativa de Fichas tecnicas y certificacion forestal</h2>
+            </div>
+            <div class="tabla max-w-6xl m-auto overflow-y-auto rounded-xl shadow-md ">
+                <table class="w-full border-collapse text-left text-lg">
+                    <tr class="bg-gray-50">
+                        <th class="px-3 py-3">Codigo</th>
+                        <th class="px-3 py-3">Linea de Mueble</th>
+                        <th class="px-3 py-3">Especie Forestal</th>
+                        <th class="px-3 py-3">Humedad al Horno %</th>
+                        <th class="px-3 py-3">Resistencia Mecanica</th>
+                        <th class="px-3 py-3">Certificacion Forestal ICF</br>
+                            Etiquetas de Color</th>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-3">MB-1</td>
+                        <td class="px-3 py-3">Escritorio ejecutivo</td>
+                        <td class="px-3 py-3">Caoba</td>
+                        <td class="px-3 py-3">8-12%</td>
+                        <td class="px-3 py-3">79 MPa</td>
+                        <td class="px-3 py-3">Certificado de Plantacion</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-3 py-3">MB-2</td>
+                        <td class="px-3 py-3">Mesa de Directorio</td>
+                        <td class="px-3 py-3">Cedro</td>
+                        <td class="px-3 py-3">12%</td>
+                        <td class="px-3 py-3">35 MPa</td>
+                        <td class="px-3 py-3">Certificado de Plantacion/</br>
+                            Planta de manejo</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-3">p-3</td>
+                        <td class="px-3 py-3">Estanteria</td>
+                        <td class="px-3 py-3">Pino Oocarpa</td>
+                        <td class="px-3 py-3">10-15%</td>
+                        <td class="px-3 py-3">45 MPa</td>
+                        <td class="px-3 py-3">Plan de manejo</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-3 py-3">MB-4</td>
+                        <td class="px-3 py-3">Mueble de recepcion</td>
+                        <td class="px-3 py-3">Nogal</td>
+                        <td class="px-3 py-3">8%</td>
+                        <td class="px-3 py-3">61 MPa</td>
+                        <td class="px-3 py-3">Plan de Manejo</td>
+                    </tr>
+                    <tr >
+                        <td class="px-3 py-3">MB-5</td>
+                        <td class="px-3 py-3">Mesa de Juntas</td>
+                        <td class="px-3 py-3">Cedro</td>
+                        <td class="px-3 py-3">12%</td>
+                        <td class="px-3 py-3">35 MPa</td>
+                        <td class="px-3 py-3">Certificado de Plantacion</td>
+                    </tr>
+                </table>
+            </div>
+
+        </seccion>
+    <section>
+        <h2 class="titulo text-3xl text-center m-2">Enlace a redes sociales</h2>
+        <nav>
+            <ul class="flex justify-center gap-20">
+                <li><a href="https://www.facebook.com/" target="_blank" ><img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="40" height="40"></a></li>
+            </ul>
+        </nav>
+    </section>
+    </main>
+      <footer class="titulo text-sm text-center m-2">
         <br>
         <br>
         <p>&copy; 2026 FANAS Honduras. Todos los derechos reservados.<br>
@@ -161,6 +295,7 @@
             
         Sitio hecho con fines académicos. [Justin David Gonzalez 20231031599]</p>
     </footer>
+
 
     </body>
 </html>

@@ -4,26 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEGOCIO DE CARPINTERIA</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="Encabezado-Pagina">
-        <div class="logo-area">
-            <h1>fabrica muebles</h1>
-            <p class="eslogan">Conoce nuestros muebles</p>
+    <div class="informacion text-sm flex justify-center bg-[#a77f5f] text-white rounded-xs gap-10">
+        <p>contacto: 33992772 | 987626223 </p>
+        <p>hora de atencion: Lun-Vie 8am- 5pm</p>
+    </div>
+
+     <nav class="bg-gray-900 text-white">
+        <div class="max-auto mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+            <a href="incio.html" class="flex items-center gap-3 text-3xl font-bold"><img src="img/image.png" alt="Logo Aura Madera" class="h-12 w-auto">Aura Madera</a>
+           <input type="checkbox" id="btn-menu" class="peer hidden">
+            <label for="btn-menu" class="md:hidden text-3xl cursor-pointer">☰</label>
+            <ul class="hidden peer-checked:flex flex-col w-full mt-4 md:mt-0 md:flex md:flex-row md:gap-6 md:w-auto">
+            <li><a href="incio.html" class="block py-2 hover:text-amber-400">Inicio</a></li>
+            <li><a href="catalogos.html" class="block py-2 hover:text-amber-400 ">Catalogos</a></li>
+            <li><a href="lotes especiales.html" class="block py-2 hover:text-amber-400">Lotes Especiales</a></li>
+            <li><a href="licitaciones.html" class="block py-2 hover:text-amber-400">Licitaciones</a></li>
+            <li><a href="contacto.html" class="block py-2 hover:text-amber-400">Contacto</a></li>
+            <li><a href="https://wa.me/" target="_blank" class="block w-fit bg-[#25D366] hover:bg-green-600 text-white font-bold px-5 py-2 mt-2 md:mt-0 rounded-full shadow transition">Cotizar Lote por WhatsApp</a></li>
+            </ul>
+
         </div>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="incio.html">Inicio</a></li>
-            <li><a href="catalogos.html">Catalogos</a></li>
-            <li><a href="lotes especiales.html"> Lotes Especiales</a></li>
-            <li><a href="licitaciones.html"> Licitaciones</a> </li>
-            <li><a href="contacto.html"> Contacto</a> </li>
-        </ul>
     </nav>
 
     <main>
+        <section class="contacto">
+            <h1>Contactanos</h1>
+            <div class="contenedor-contacto">
+                <article>
+                    <h2>LLamanos</h2>
+                    <p>Nosotros estamos disponibles en el teléfono de 8AM to 6.00PM, de Lunes a Jueves, y viernes de 8AM a 5PM horario de oficina, siempre y cuando sea algo fácil y sencillo sobre su proyecto podemos hablar por teléfono.</p>
+                    <p>+504 2234-3547</p>
+                </article>
+                <article>
+                    <h2>Escribenos</h2>
+                    <p>Si tiene alguna pregunta acerca de nuestros servicios y productos, y lo que ofrecemos a nuestros clientes o empresas, puede escribirnos directamente a nuestro correo electrónico que está abajo, y tenemos 24 horas para poder responderle.</p>
+                    <p>info@disemahn.com</p>
+                </article>
+                <article>
+                    <h2>siguemos</h2>
+                    <p>
+                        Si tienes alguna pregunta rápida, síguenos en Facebook, y podremos contestarte y ayudarte a mostrar nuestras diferentes propuestas de trabajo, algunas promociones y descuentos que puedes disfrutar por tu fidelidad.
+                    </p>
+                    <nav>
+                         <ul>
+                            <li><a href="https://www.facebook.com/" target="_blank" ><img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="40" height="40"></a></li>
+                        </ul>
+        </nav>
+                </article>
+            </div>
+
+        </section>
 
     </main>
       <footer class="pie-pagina">
