@@ -6,7 +6,7 @@
     <title>NEGOCIO DE CARPINTERIA</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
     <div class="informacion text-sm flex justify-center bg-gray-900 text-white rounded-xs gap-10">
         <p>contacto: 33992772 | 987626223 </p>
         <p>hora de atencion: Lun-Vie 8am- 5pm</p>
@@ -29,45 +29,48 @@
         </div>
     </nav>
 
-    <main>
-        <section class="contacto">
-            <h1>Contactanos</h1>
-            <div class="contenedor-contacto">
-                <article>
-                    <h2>LLamanos</h2>
+    <main class="grow">
+        <section class="contacto" >
+            <div class="contenedor titulo rounded-lg bg-gray-100 p-2 m-2">
+            <h2 class="titulo text-3xl text-center m-2">Medios de Contacto</h2>
+            </div>
+            <div class="contenedor-contacto w-full max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
+                    <h2 class="nombre text-3xl font-bold text-center">LLamanos</h2>
                     <p>Nosotros estamos disponibles en el teléfono de 8AM to 6.00PM, de Lunes a Jueves, y viernes de 8AM a 5PM horario de oficina, siempre y cuando sea algo fácil y sencillo sobre su proyecto podemos hablar por teléfono.</p>
-                    <p>+504 2234-3547</p>
+                    <p class="mt-auto text-center"><strong>+504 2234-3547</strong></p>
                 </article>
-                <article>
-                    <h2>Escribenos</h2>
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
+                    <h2 class="nombre text-3xl font-bold text-center">Escribenos</h2>
                     <p>Si tiene alguna pregunta acerca de nuestros servicios y productos, y lo que ofrecemos a nuestros clientes o empresas, puede escribirnos directamente a nuestro correo electrónico que está abajo, y tenemos 24 horas para poder responderle.</p>
-                    <p>info@disemahn.com</p>
+                    <p class="mt-auto text-center"><strong> info@disemahn.com</strong></p>
                 </article>
-                <article>
-                    <h2>siguemos</h2>
+                <article class="bg-white border rounded-lg shadow p-4 flex flex-col">
+                    <h2 class="nombre text-3xl font-bold text-center">siguemos</h2>
                     <p>
                         Si tienes alguna pregunta rápida, síguenos en Facebook, y podremos contestarte y ayudarte a mostrar nuestras diferentes propuestas de trabajo, algunas promociones y descuentos que puedes disfrutar por tu fidelidad.
                     </p>
                     <nav>
-                         <ul>
-                            <li><a href="https://www.facebook.com/" target="_blank" ><img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40"></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank" ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="40" height="40"></a></li>
+                    <ul class="flex justify-center gap-20 m-4">
+                        <li><a href="https://www.facebook.com/" target="_blank" ><img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="40" height="40"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="40" height="40"></a></li>
                         </ul>
-        </nav>
+                    </nav>
                 </article>
             </div>
 
         </section>
 
+
     </main>
-      <footer class="pie-pagina">
-        <br>
-        <br>
-        <p>&copy; 2026 AURA MADERA. Todos los derechos reservados.<br>
-            Tegucigalpa MDC, anillo periferico cerca de puente san miguel, tel: 3399-2772 | 9876-2622 </br>
-            Sala de ventas: Blvd. Moazan, Tegucigalpa Tel: 2238-7756</br>
-        Sitio hecho con fines académicos. [Justin David Gonzalez 20231031599]</p>
-    </footer>
+    <footer class="titulo text-sm text-center m-2">
+            <br>
+            <br>
+            <p>&copy; 2026 AURA MADEEA. Todos los derechos reservados.<br>
+                Tegucigalpa MDC, anillo periferico cerca de puente san miguel, tel: 3399-2772 | 9876-2622 -- Sala de ventas: Blvd. Morazan, Tegucigalpa Tel: 2238-7756</br>
+                
+            Sitio hecho con fines académicos. [Justin David Gonzalez 20231031599]</p>
+        </footer>
 
     </body>
 </html>
