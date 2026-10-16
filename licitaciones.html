@@ -6,8 +6,8 @@
     <title>NEGOCIO DE CARPINTERIA</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="informacion text-sm flex justify-center bg-[#a77f5f] text-white rounded-xs gap-10">
+<body class="bg-orange-50">
+    <div class="informacion text-sm flex justify-center bg-gray-900  text-white rounded-xs gap-10">
         <p>contacto: 33992772 | 987626223 </p>
         <p>hora de atencion: Lun-Vie 8am- 5pm</p>
     </div>
@@ -30,55 +30,56 @@
     </nav>
 
     <main>
-        <section class="formulario">
-            <h2> Formulario de Requisitos y Licitaciones</h2>
+        <section class="formulario max-w-3xl mx-auto px-4 my-6">
+          <h2 class="text-3xl text-center bg-gray-100 rounded-lg p-3 mb-6"> Formulario de Requisitos y Licitaciones</h2>
             <div class="contenedeor-licitaciones">
-                <form>
-                    <div class="campo">
-                        <label for="nombre">Ingrese Su nombre Completo</label>
-                        <input id="nombre" type="text">
+                    <form class="border rounded-xl p-4 space-y-3 shadow bg-white">
+                <div class="campo flex justify-between items-center border rounded-lg p-2">
+                        <label for="nombre" class="font-semibold">Ingrese su nombre sompleto</label>
+                    <input id="nombre" type="text" class="border rounded px-2 py-1">
                     </div>
-                    <div class="campo">
-                        <label for="RTN">Ingrese su RTN</label>
-                        <input id="RTN" type="text" minlength="14" maxlength="14" >
+                  <div class="campo flex justify-between items-center border rounded-lg p-2">
+                        <label for="RTN" class="font-semibold">Ingrese su RTN</label>
+                        <input id="RTN" type="text" minlength="14" maxlength="14" class="border rounded px-2 py-1" >
+                  </div>
+                    <div class="campo flex justify-between items-center border rounded-lg p-2">
+                    <label for="correo" class="font-semibold">Ingrese su Correo institucional</label>
+                        <input id="correo" type="email" class="border rounded px-2 py-1">
+                </div>
+                    <div class="campo flex justify-between items-center border rounded-lg p-2">
+                        <label for="tel" class="font-semibold">Ingrese su numero telefonico</label>
+                      <input id="tel" type="tel" min="8" max="8" class="border rounded px-2 py-1">
                     </div>
-                    <div class="campo">
-                        <label for="correo">Ingrese su Correo Institucional</label>
-                        <input id="correo" type="email">
-                    </div>
-                    <div class="campo">
-                        <label for="tel">Ingrese su numero Telefonico</label>
-                        <input id="tel" type="tel" min="8" max="8">
-                    </div>
-                    <div class="campo">
-                        <label for="entrega">Departamento de Entrega</label>
-                        <select id="entrega">
-                            <option>Comayagua</option>
-                            <option>Francisco Morazan</option>
-                            <option>San pedro Sula</option>
-                            <option>La Paz</option>
-                            <option>Cortez</option>
-                            <option>Atlantida</option>
-                            <option>Islas de la Bahia</option>
-                            <option>Intibuca</option>
-                            <option>Gracias a Dios</option>
-                            <option>Valle</option>
-                            <option>Choluteca</option>
+                <div class="campo flex justify-between items-center border rounded-lg p-2">
+                        <label for="entrega" class="font-semibold">Departamento de Entrega</label>
+                    <select id="entrega" class="border rounded px-2 py-1">
+                        <option>Comayagua</option>
+                        <option>Francisco Morazan</option>
+                        <option>San pedro Sula</option><option>La Paz</option>
+                        <option>Cortez</option>
+                        <option>Atlantida</option>
+                        <option>Islas de la Bahia</option>
+                        <option>Intibuca</option>
+                        <option>Gracias a dios</option>
+                        <option>Valle</option>
+                        <option>Choluteca</option>
                         </select>
                     </div>
-                    <div class="campo">
-                        <input type="checkbox" id="garantia" name="garantia" required>
-                        <label for="garantia">Acepto Terminos de Garantia Forestal de 5 anoa</label>
+                      <div class="campo flex items-center gap-2 border rounded-lg p-2">
+                        <input type="checkbox" id="garantia" name="garantia" required class="w-4 h-4">
+                        <label for="garantia" class="font-semibold">Acepto Terminos de Garantia Forestal de 5 anoa</label>
                     </div>
 
-                    <button type="submit">Enviar Cotizacion</button>
-                    <button type="reset">Limpiar formulario</button>
-                </form>
+                  <div class="flex flex-wrap gap-3">
+                        <button type="submit" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded-lg cursor-pointer">Enviar Cotizacion</button>
+                    <button type="reset" class="flex-1 bg-gray-300 hover:bg-gray-400 font-bold py-2 rounded-lg cursor-pointer">Limpiar formulario</button>
+                  </div>
+                    </form>
             </div>
 
         </section>
 
-    </main>
+   </main>
       <section>
         <h2 class="titulo text-3xl text-center m-2 gap-20">Enlace a redes sociales</h2>
         <nav>
@@ -93,7 +94,7 @@
       <footer class="titulo text-sm text-center m-2">
         <br>
         <br>
-        <p>&copy; 2026 FANAS Honduras. Todos los derechos reservados.<br>
+        <p>&copy; 2026 AURA MADERA. Todos los derechos reservados.<br>
             Tegucigalpa MDC, anillo periferico cerca de puente san miguel, tel: 3399-2772 | 9876-2622 -- Sala de ventas: Blvd. Morazan, Tegucigalpa Tel: 2238-7756</br>
             
         Sitio hecho con fines académicos. [Justin David Gonzalez 20231031599]</p>
